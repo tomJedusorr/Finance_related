@@ -1,3 +1,4 @@
+```python
 import yfinance as yf
 
 def calculate_avg_annual_return_and_std_dev(ticker, start_date, end_date):
