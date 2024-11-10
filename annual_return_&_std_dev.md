@@ -1,3 +1,5 @@
+Here's the main code
+
 ```python
 import yfinance as yf
 
@@ -45,3 +47,21 @@ def calculate_avg_annual_return_and_std_dev(ticker, start_date, end_date):
     print(f"The average annual return of {ticker}, from {start_date} to {end_date} is: {avg_annual_return:.4%}\n")
     print(f"The standard deviation of {ticker}, from {start_date} to {end_date} is: {std_dev:.4%}\n")
     print(f"The simplified sharpe ratio from this period is then: {sharpe_ratio_simplified:.4f}")
+
+```
+Example of usage with the Coca-Cola company, ticker "KO"
+
+```python
+ticker = 'KO'  # Carrefour ticker on Euronext
+start_date = '2009-10-23'
+end_date = '2024-10-23'
+calculate_avg_annual_return_and_std_dev(ticker, start_date, end_date)
+```
+
+Result:
+
+The average annual return of KO, from 2009-10-23 to 2024-10-23 is: 8.5219%
+
+The standard deviation of KO, from 2009-10-23 to 2024-10-23 is: 17.0681%
+
+The simplified sharpe ratio from this period is then: 0.4993
