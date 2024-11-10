@@ -45,9 +45,3 @@ def calculate_avg_annual_return_and_std_dev(ticker, start_date, end_date):
     print(f"The average annual return of {ticker}, from {start_date} to {end_date} is: {avg_annual_return:.4%}\n")
     print(f"The standard deviation of {ticker}, from {start_date} to {end_date} is: {std_dev:.4%}\n")
     print(f"The simplified sharpe ratio from this period is then: {sharpe_ratio_simplified:.4f}")
-
-# Example usage
-ticker = 'MCD'  # Carrefour ticker on Euronext
-start_date = '2009-10-23'
-end_date = '2024-10-23'
-calculate_avg_annual_return_and_std_dev(ticker, start_date, end_date)
